@@ -8,6 +8,7 @@ namespace MergeAlgo
 {
     class MergeSort
     {
+        // Sadly not working :(
         public int Merge(int[] Ray)
         {
             int number = Ray.Length;
@@ -42,24 +43,8 @@ namespace MergeAlgo
         {
             int l = 0;
             int r = 0;
-            int i = 0;
 
-            while (l < left.Length && r < right.Length)
-            {
-                if (left[l] < right[r])
-                {
-                    main[i] = left[l];
-                    l++;
-                }
-
-                else
-                {
-                    main[i] = right[r];
-                    r++;
-                }
-                i++;
-            }
-            /*for (int i = 0; i < main.Length; i++)
+            for (int i = 0; i < main.Length; i++)
             {
                 if (left[l] < right[r] && l < left.Length)
                 {
@@ -71,7 +56,7 @@ namespace MergeAlgo
                     main[i] = right[r];
                     r++;
                 }
-            }*/
+            }
         }
     }
 }
